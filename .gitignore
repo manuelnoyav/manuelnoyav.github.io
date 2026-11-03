@@ -1,0 +1,12 @@
+# Solo los PDF destinados a descarga publica.
+*.pdf
+!/assets/docs/talent4cyber-2025.pdf
+!/assets/docs/premio-cpeig-xovetic-2026.pdf
+!/assets/docs/xovetic-2026-manuel-noya.pdf
+
+# Archivos temporales locales.
+node_modules/
+__pycache__/
+*.tmp
+.DS_Store
+Thumbs.db

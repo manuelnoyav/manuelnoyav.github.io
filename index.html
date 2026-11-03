@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-  rel="icon"
-  href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🛡️</text></svg>'/>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <title>Manuel Noya Vázquez | Portfolio</title>
   <meta
     name="description"
-    content="Portfolio de Manuel Noya Vázquez. Ciberseguridad, informática forense, offensive security e IA aplicada a seguridad."
+    content="Manuel Noya Vázquez. Técnico de ciberseguridad en prácticas en Balidea. Informática forense e IA aplicada a seguridad."
   />
   <style>
     :root {
@@ -596,30 +594,33 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
   <header class="topbar">
     <div class="container topbar-inner">
       <a class="brand" href="#inicio">
-        <span class="brand-dot"></span>
+        <span class="brand-dot" aria-hidden="true"></span>
         Manuel Noya Vázquez
       </a>
 
       <nav class="nav" aria-label="Navegación principal">
         <a href="#formacion">Formación</a>
+        <a href="#experiencia">Experiencia</a>
         <a href="#proyectos">Proyectos</a>
-        <a href="#certificados">Certificados</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <main class="container" id="inicio">
+  <main class="container" id="contenido" tabindex="-1">
+    <div id="inicio"></div>
     <section class="hero">
       <div class="hero-grid">
         <article class="card photo-card">
           <div class="photo-frame">
-            <img src="assets/img/foto-perfil.png" alt="Foto de Manuel Noya Vázquez" />
+            <img src="assets/img/foto-perfil.png" alt="Foto de Manuel Noya Vázquez" width="640" height="800" fetchpriority="high" />
           </div>
         </article>
 
@@ -627,21 +628,17 @@
           <div class="eyebrow">Cybersecurity Portfolio</div>
           <h1>Manuel Noya Vázquez</h1>
           <div class="subtitle">
-            Ciberseguridad · Informática Forense · Offensive Security · IA aplicada a Seguridad
+            Ciberseguridad · Informática forense · IA aplicada a ciberseguridad
           </div>
 
-          <p class="lead">
-            Graduado en Ingeniería Informática y actualmente enfocado en construir un perfil técnico en
-            ciberseguridad, con especial interés en análisis forense digital, seguridad ofensiva y uso
-            práctico de inteligencia artificial en entornos de seguridad.
-          </p>
+          <p class="lead academic-intro"><strong>Graduado en Ingeniería Informática</strong>, con mención en Tecnologías de la Información. Actualmente cursando el <strong>Máster Interuniversitario en Ciberseguridad</strong> y con el título propio de UNIR <strong>Programa Avanzado en Inteligencia Artificial aplicada a Ciberseguridad</strong>.</p>
+          <div class="interests"><p>Especial interés en los siguientes campos:</p><ul><li>Inteligencia artificial aplicada a la ciberseguridad.</li><li>Análisis forense digital.</li><li>Desarrollo de soluciones de ciberseguridad.</li><li>Purple Team: combinación de Blue Team y Red Team.</li></ul></div>
+          <p class="current-role">Actualmente, técnico de ciberseguridad en prácticas en <strong>Balidea Programming &amp; Consulting</strong>.</p>
 
           <div class="meta-row">
             <span class="chip">A Coruña, España</span>
-            <span class="chip">Graduado en Ingeniería Informática · Mención en Tecnologías de la Información</span>
-            <span class="chip">Máster Interuniversitario en Ciberseguridad</span>
             <span class="chip">UNIR · IA aplicada a Ciberseguridad</span>
-            <span class="chip">Cambridge Linguaskill B2</span>
+            <span class="chip">Castellano · Gallego · Inglés B2</span>
           </div>
 
           <div class="hero-actions">
@@ -687,16 +684,13 @@
       <div class="section-header">
         <div class="section-kicker">Trayectoria</div>
         <h2 class="section-title">Formación</h2>
-        <p class="section-desc">
-          Formación académica orientada a construir una base sólida en ciberseguridad y tecnologías aplicadas.
-        </p>
       </div>
 
       <div class="grid-3">
         <article class="card timeline-card">
           <div class="tiny-label">UDC</div>
           <h3>Grado en Ingeniería Informática</h3>
-          <p><strong>Mención en Tecnologías de la Información</strong><br />2021 – 2025</p>
+          <p><strong>Mención en Tecnologías de la Información</strong><br />2021 – 2025</p><span class="available">Disponible</span>
         </article>
 
         <article class="card timeline-card">
@@ -707,23 +701,30 @@
 
         <article class="card timeline-card">
           <div class="tiny-label">UNIR</div>
-          <h3>Programa Avanzado en IA aplicada a Ciberseguridad</h3>
-          <p><strong>Aplicación de IA a seguridad</strong><br />2026</p>
+          <h3>Programa Avanzado en Inteligencia Artificial aplicada a Ciberseguridad</h3>
+          <p><strong>Título propio · 450 horas · 18 ECTS</strong><br />2026 · Sobresaliente: 9,70</p><span class="available">Disponible</span>
         </article>
       </div>
     </section>
 
     <div class="divider"></div>
 
+    <section class="section" id="experiencia">
+      <div class="section-header"><div class="section-kicker">Trayectoria profesional</div><h2 class="section-title">Experiencia</h2></div>
+      <article class="card timeline-card experience-row">
+        <div><div class="tiny-label">Prácticas · 225 horas de experiencia</div><h3>Técnico de ciberseguridad</h3><p><strong>Balidea Programming &amp; Consulting</strong></p></div>
+        <div class="experience-content"><ul class="work-list"><li>Auditorías de seguridad y pentesting.</li><li>Revisión de código.</li><li>Desarrollo de herramientas de ciberseguridad.</li><li>Preparación de propuestas de proyectos de consultoría.</li></ul></div>
+      </article>
+    </section>
+    <div class="divider"></div>
+
     <section class="section" id="proyectos">
       <div class="section-header">
         <div class="section-kicker">Proyectos académicos</div>
-        <h2 class="section-title">Proyectos Académicos</h2>
-        <p class="section-desc">
-          Proyectos desarrollados en el ámbito de la informática forense, la inteligencia artificial y la ciberseguridad.
-        </p>
+        <h2 class="section-title">Proyectos académicos</h2>
       </div>
 
+      <div class="project-grid">
       <!-- Trabajo Fin de Grado -->
       <article class="card project-card">
         <div class="tiny-label">TFG</div>
@@ -757,7 +758,7 @@
       </article>
 
       <!-- Proyecto independiente -->
-      <article class="card project-card" style="margin-top: 24px;">
+      <article class="card project-card" >
         <div class="tiny-label">Proyecto UNIR</div>
 
         <h3>PhishGuard AI</h3>
@@ -788,111 +789,56 @@
           </a>
         </div>
       </article>
+          </div>
     </section>
 
     <div class="divider"></div>
 
-    <section class="section" id="certificados">
-      <div class="section-header">
-        <div class="section-kicker">Documentación</div>
-        <h2 class="section-title">Certificados</h2>
-        <p class="section-desc">
-          Documentación académica, certificaciones de idiomas y participación en eventos relevantes.
-        </p>
-      </div>
+    <section class="section" id="premios">
+      <div class="section-header"><div class="section-kicker">Investigación</div><h2 class="section-title">Publicaciones y reconocimientos</h2></div>
+      <article class="card publication-card">
+        <div class="publication-copy"><span class="tiny-label">XoveTIC 2026 · Artículo</span><h3 lang="en">Integrating Computer Vision into Autopsy for Scalable Visual Evidence Triage in Digital Forensic Investigations</h3><p>Artículo derivado de mi TFG sobre visión por computador aplicada al análisis forense de imágenes en Autopsy.</p><div class="resource-actions"><a class="btn" href="assets/docs/xovetic-2026-manuel-noya.pdf" download>Artículo (PDF)</a><a class="inline-link" href="https://github.com/manuelnoyav/autopsy-ai-image-toolkit" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a></div></div>
+        <div class="publication-award"><span class="tiny-label">Reconocimiento</span><h3>Premio CPEIG</h3><p>IX Congreso XoveTIC · 2026</p><a class="btn primary" href="assets/docs/premio-cpeig-xovetic-2026.pdf" download>Diploma (PDF)</a></div>
+      </article>
+    </section>
+    <div class="divider"></div>
 
-      <div class="cert-section">
-        <h3 class="cert-group-title">Formación</h3>
-        <div class="grid-3">
-          <article class="card resource-card">
-            <div class="card-content">
-              <div class="tiny-label">Formación</div>
-              <h3>Grado en Ingeniería Informática (TI)</h3>
-            </div>
-            <div class="resource-actions">
-              <span class="status-text">Disponible</span>
-            </div>
-          </article>
-
-          <article class="card resource-card">
-            <div class="card-content">
-              <div class="tiny-label">Formación</div>
-              <h3>Máster Interuniversitario en Ciberseguridad</h3>
-            </div>
-            <div class="resource-actions">
-              <span class="status-text">En curso</span>
-            </div>
-          </article>
-
-          <article class="card resource-card">
-            <div class="card-content">
-              <div class="tiny-label">Formación</div>
-              <h3>Programa Avanzado en IA aplicada a Ciberseguridad</h3>
-            </div>
-            <div class="resource-actions">
-              <span class="status-text">Disponible</span>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="cert-section">
-        <h3 class="cert-group-title">Eventos</h3>
-        <div class="grid-3">
-          <article class="card resource-card">
-            <div class="card-content">
-              <div class="tiny-label">Eventos</div>
-              <h3>Talent4Cyber 2025</h3>
-              <p>Certificado de participación.</p>
-            </div>
-            <div class="resource-actions">
-              <a class="btn primary" href="assets/docs/talent4cyber-2025.pdf" target="_blank">
-                Ver certificado
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="cert-section">
-        <h3 class="cert-group-title">Idiomas</h3>
-        <div class="grid-3">
-          <article class="card resource-card">
-            <div class="card-content">
-              <div class="tiny-label">Idiomas</div>
-              <h3>Cambridge Linguaskill B1</h3>
-              <p>Certificación de inglés.</p>
-            </div>
-             <div class="resource-actions">
-              <span class="status-text">Disponible</span>
-            </div>
-            <div class="resource-actions"></div>
-          </article>
-
-          <article class="card resource-card">
-            <div class="card-content">
-              <div class="tiny-label">Idiomas</div>
-              <h3>Cambridge Linguaskill B2</h3>
-              <p>Certificación de inglés.</p>
-            </div>
-            <div class="resource-actions">
-              <span class="status-text">Disponible</span>
-            </div>
-              <div class="resource-actions"></div>
-          </article>
-        </div>
+    <section class="section" id="actividades">
+      <div class="section-header"><div class="section-kicker">CTF</div><h2 class="section-title">Actividades adicionales</h2></div>
+      <div class="activity-grid">
+        <article class="card activity-card"><div class="activity-heading"><h3>C3TF 2026</h3><span class="result-badge">Top 10</span></div><p>Entre los 10 primeros equipos de la competición.</p><span class="activity-meta">2026 · Participación por equipos</span></article>
+        <article class="card activity-card"><div class="activity-heading"><h3>Talent4Cyber 2025</h3><span class="result-badge">Top 15</span></div><p>Entre los 15 primeros equipos de la competición.</p><div class="resource-actions"><a class="inline-link" href="assets/docs/talent4cyber-2025.pdf" download>Ver diploma de participación ↗</a></div></article>
       </div>
     </section>
+    <div class="divider"></div>
 
+    <section class="section" id="certificados">
+      <div class="section-header"><div class="section-kicker">Aprendizaje continuo</div><h2 class="section-title">Certificaciones</h2></div>
+      <article class="card compact-credential cisco-credential"><div><h3>Introducción a Ciberseguridad</h3><p>Cisco Networking Academy · Septiembre de 2026</p></div><span class="available">Disponible</span></article>
+
+      <details class="card tools manufacturers-compact">
+        <summary>Herramientas y fabricantes <span>Checkmarx · Yubico · Proactivanet</span></summary>
+        <div class="manufacturer-lines">
+          <div><h4>Checkmarx</h4><p>Revisión de código · <a href="https://checkmarx.com/customer-enablement/checkmarx-university/" target="_blank" rel="noopener noreferrer">Checkmarx University ↗</a></p></div>
+          <div><h4>Yubico · YubiKey</h4><p>Llaves de seguridad y passkeys · Essentials y Sales <span class="available">Disponible</span></p></div>
+          <div><h4>Proactivanet</h4><p>Gestión de activos · PCC y PCT ITAM, Bronze y Silver <span class="available">Disponible</span></p></div>
+        </div>
+      </details>
+    </section>
+    <div class="divider"></div>
+
+    <section class="section" id="idiomas">
+      <div class="section-header"><div class="section-kicker">Comunicación</div><h2 class="section-title">Idiomas</h2></div>
+      <div class="subsection-heading"><h3>Inglés · Certificados</h3></div>
+      <div class="language-grid"><article class="card compact-credential"><div class="language-title"><span class="language-level">B2</span><div><h3>Cambridge Linguaskill</h3><p>Certificación de inglés</p></div></div><span class="available">Disponible</span></article><article class="card compact-credential"><div class="language-title"><span class="language-level">B1</span><div><h3>Cambridge Linguaskill</h3><p>Certificación de inglés</p></div></div><span class="available">Disponible</span></article></div>
+      <p class="native-summary">Idiomas nativos: <span>castellano y gallego</span>.</p>
+    </section>
     <div class="divider"></div>
 
     <section class="section" id="contacto">
       <div class="section-header">
         <div class="section-kicker">Contacto</div>
         <h2 class="section-title">Conectar</h2>
-        <p class="section-desc">
-          Disponible para oportunidades formativas, colaboración técnica y primeros pasos profesionales en ciberseguridad.
-        </p>
       </div>
 
       <div class="contact-grid">
@@ -918,18 +864,6 @@
             </div>
           </div>
         </article>
-
-        <article class="card contact-card">
-          <div class="tiny-label">Disponibilidad</div>
-          <h3>Interés profesional</h3>
-          <p>
-            Abierto a oportunidades laborales, colaboración técnica, proyectos académicos y primeras experiencias profesionales dentro del ámbito de la ciberseguridad.
-          </p>
-          <div class="resource-actions">
-            <a class="btn primary" href="mailto:manuel.noya@udc.es">Contactar por email</a>
-            <a class="btn" href="https://www.linkedin.com/in/manuel-noya-v%C3%A1zquez-972543363/" target="_blank" rel="noopener noreferrer">Ver LinkedIn</a>
-          </div>
-        </article>
       </div>
     </section>
   </main>
@@ -938,7 +872,7 @@
     <div class="container">
       <div class="card footer-card">
         <div class="footer-note">© 2026 Manuel Noya Vázquez · Portfolio personal</div>
-        
+
       </div>
     </div>
   </footer>
